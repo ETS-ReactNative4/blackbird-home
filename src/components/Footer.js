@@ -62,7 +62,7 @@ class Footer extends Component {
                             <div className="w-form">
                                 <form name="email-form" data-name="Email Form" className="w-clearfix"
                                       onSubmit={this.submit.bind(this)} ref={(el) => this.contactsForm = el}>
-                                    <input type="text" name="email" placeholder="Your email"
+                                    <input type="email" name="email" placeholder="Your email"
                                            maxLength={256} required className="field-left w-input"/>
                                     <input type="submit" defaultValue="OK" className="button form w-button"/>
                                     <div className="no-spam">We send about 2 emails a month</div>

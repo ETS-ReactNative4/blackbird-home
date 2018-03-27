@@ -27,7 +27,7 @@ class Contacts extends Component {
         return (
             <div className="section contact-us">
                 <div className="w-container"><h1>Getting in touch is easy</h1>
-                    <div className="subtitle">We'll get back to you ASAP. No worries.</div>
+                    <div className="get-in-touch-subtitle">We'll get back to you ASAP. No worries.</div>
                     <div className="w-form">
                         <form name="email-form" data-name="Email Form" className="w-clearfix"
                               onSubmit={this.submit.bind(this)} ref={(el) => this.contactsForm = el}>
