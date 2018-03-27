@@ -3,6 +3,7 @@ import FacebookLogo from '../img/facebook-logo.svg';
 import LinkedinLogo from '../img/linkedin-logo.svg';
 import DouLogo from '../img/dou-logo.png';
 import Link from "react-router-dom/es/Link";
+import {API} from 'aws-amplify';
 
 class Footer extends Component {
     submit(e) {

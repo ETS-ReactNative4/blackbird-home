@@ -11,31 +11,31 @@ features:
           sdk-generation-stage-name: Development
         paths:
           /blackbird/contacts: !com.amazonaws.mobilehub.v0.Function 
-            codeFilename: uploads/BlackbirdContacts-20180327144336.zip
+            codeFilename: uploads/BlackbirdContacts-20180327190855.zip
             description: 'Handler for calls to resource path : /blackbird/contacts/{proxy+}'
             enableCORS: true
             environment: {}
             handler: lambda.handler
-            hashcode: ErQ22olu7/WZ9z9vh/dIXMujTDoJsb/PTMtW6mkLEcY=
+            hashcode: pA85SkFuKJlsFeUSia4jwmqV4/fXyi2+zZ7WY4FaUlI=
             memorySize: '128'
-            modified: '2018-03-27T11:44:26.832+0000'
+            modified: '2018-03-27T16:10:11.558+0000'
             name: BlackbirdContacts
             runtime: nodejs6.10
             timeout: '3'
-            version: LWtNYrcnYgMzj49Kc917RV2aHZCWf7QL
+            version: Q6Vms07A5XVEYmOd5QuYP9pW9r_q6QNE
           '/blackbird/contacts/{proxy+}': !com.amazonaws.mobilehub.v0.Function 
-            codeFilename: uploads/BlackbirdContacts-20180327144336.zip
+            codeFilename: uploads/BlackbirdContacts-20180327190855.zip
             description: 'Handler for calls to resource path : /blackbird/contacts/{proxy+}'
             enableCORS: true
             environment: {}
             handler: lambda.handler
-            hashcode: ErQ22olu7/WZ9z9vh/dIXMujTDoJsb/PTMtW6mkLEcY=
+            hashcode: pA85SkFuKJlsFeUSia4jwmqV4/fXyi2+zZ7WY4FaUlI=
             memorySize: '128'
-            modified: '2018-03-27T11:44:26.832+0000'
+            modified: '2018-03-27T16:10:11.558+0000'
             name: BlackbirdContacts
             runtime: nodejs6.10
             timeout: '3'
-            version: nkJ4kIlViuUh6D3S1cwxbgyFaRGKzSTO
+            version: DnlSuZXRNVcidJxNXSylirub9nAATuHM
   content-delivery: !com.amazonaws.mobilehub.v0.ContentDelivery 
     attributes:
       enabled: true
