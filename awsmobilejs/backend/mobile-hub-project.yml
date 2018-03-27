@@ -1,0 +1,50 @@
+--- !com.amazonaws.mobilehub.v0.Project 
+apps:
+  web: !com.amazonaws.mobilehub.v0.AppDO {}
+features:
+  cloudlogic: !com.amazonaws.mobilehub.v0.CloudLogic 
+    components:
+      BlackbirdHome: !com.amazonaws.mobilehub.v0.API 
+        attributes:
+          name: BlackbirdHome
+          requires-signin: false
+          sdk-generation-stage-name: Development
+        paths:
+          /blackbird/contacts: !com.amazonaws.mobilehub.v0.Function 
+            codeFilename: uploads/BlackbirdContacts-20180327144336.zip
+            description: 'Handler for calls to resource path : /blackbird/contacts/{proxy+}'
+            enableCORS: true
+            environment: {}
+            handler: lambda.handler
+            hashcode: ErQ22olu7/WZ9z9vh/dIXMujTDoJsb/PTMtW6mkLEcY=
+            memorySize: '128'
+            modified: '2018-03-27T11:44:26.832+0000'
+            name: BlackbirdContacts
+            runtime: nodejs6.10
+            timeout: '3'
+            version: LWtNYrcnYgMzj49Kc917RV2aHZCWf7QL
+          '/blackbird/contacts/{proxy+}': !com.amazonaws.mobilehub.v0.Function 
+            codeFilename: uploads/BlackbirdContacts-20180327144336.zip
+            description: 'Handler for calls to resource path : /blackbird/contacts/{proxy+}'
+            enableCORS: true
+            environment: {}
+            handler: lambda.handler
+            hashcode: ErQ22olu7/WZ9z9vh/dIXMujTDoJsb/PTMtW6mkLEcY=
+            memorySize: '128'
+            modified: '2018-03-27T11:44:26.832+0000'
+            name: BlackbirdContacts
+            runtime: nodejs6.10
+            timeout: '3'
+            version: nkJ4kIlViuUh6D3S1cwxbgyFaRGKzSTO
+  content-delivery: !com.amazonaws.mobilehub.v0.ContentDelivery 
+    attributes:
+      enabled: true
+      visibility: public-global
+    components:
+      release: !com.amazonaws.mobilehub.v0.Bucket {}
+  mobile-analytics: !com.amazonaws.mobilehub.v0.Pinpoint 
+    components:
+      analytics: !com.amazonaws.mobilehub.v0.PinpointAnalytics {}
+  sign-in: !com.amazonaws.mobilehub.v0.SignIn {}
+name: blackbird-home
+region: us-east-1
