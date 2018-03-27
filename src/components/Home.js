@@ -9,7 +9,8 @@ class Home extends Component {
             <div>
                 <div className="section hero">
                     <div className="w-container"><h1 className="huge-heading">Blackbird Lab</h1><p
-                        className="subtitle">We provide smart solutions for companies of all sizes and pride ourselves on our unparalleled, dedicated service.</p></div>
+                        className="subtitle">We provide smart solutions for companies of all sizes and pride ourselves
+                        on our unparalleled, dedicated service.</p></div>
                 </div>
                 {/*
                 <div className="section black">

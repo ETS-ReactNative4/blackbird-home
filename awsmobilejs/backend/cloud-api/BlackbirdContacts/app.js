@@ -27,15 +27,6 @@ app.use(function (req, res, next) {
 
 AWS.config.update({region: process.env.REGION});
 
-/**********************
- * Example get method *
- **********************/
-
-app.get('/', function (req, res) {
-    // Add your code here
-    res.json({success: 'get call succeed!', url: req.url});
-});
-
 app.post('/blackbird/contacts', function (req, res) {
     console.log(req.body);
     const params = req.body;
@@ -72,7 +63,63 @@ app.post('/blackbird/contacts', function (req, res) {
         Source: bbEmail
     };
 
-    console.log('===SENDING EMAIL===');
+    console.log('===SENDING CONTACT US EMAIL===');
+    const email = SES.sendEmail(eParams, function (err, data) {
+        if (err) {
+            console.log(err);
+            res.json(err);
+        } else {
+            console.log("===EMAIL SENT===");
+            console.log(data);
+
+
+            console.log("EMAIL CODE END");
+            console.log('EMAIL: ', email);
+            res.json({
+                isBase64Encoded: false,
+                statusCode: 200,
+                headers: {},
+                body: {message: "Email has been sent."}
+            });
+        }
+    });
+});
+
+
+app.post('/blackbird/subscribe', function (req, res) {
+    console.log(req.body);
+    const params = req.body;
+
+    const bbEmail = 'info@blackbird-lab.com';
+
+    const eParams = {
+        Destination: {
+            ToAddresses: [bbEmail]
+        },
+        Message: {
+            Body: {
+                Html: {
+                    Data: `<h3>New subscription from on blackbird-lab.com:</h3></br></hr></br>
+                            <p><b>Email:</b> ${params.email}</p>`,
+                    Charset: "UTF8"
+                },
+                Text: {
+                    Data: `New subscription on blackbird-lab.com:\nEmail: ${params.email}`,
+                    Charset: "UTF8"
+                }
+            },
+            Subject: {
+                Data: `Subscription message from ${params.email}`,
+                Charset: "UTF8"
+            }
+        },
+        ReplyToAddresses: [
+            params.email
+        ],
+        Source: bbEmail
+    };
+
+    console.log('===SENDING SUBSCRIPTION EMAIL===');
     const email = SES.sendEmail(eParams, function (err, data) {
         if (err) {
             console.log(err);
