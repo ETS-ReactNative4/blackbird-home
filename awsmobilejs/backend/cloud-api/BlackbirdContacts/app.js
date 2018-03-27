@@ -30,6 +30,10 @@ AWS.config.update({region: process.env.REGION});
 app.post('/blackbird/contacts', function (req, res) {
     console.log(req.body);
     const params = req.body;
+    if (!params.email) {
+        console.log("Empty email. EMAIL WON'T BE SENT");
+        return;
+    }
 
     const bbEmail = 'info@blackbird-lab.com';
 
@@ -89,6 +93,10 @@ app.post('/blackbird/contacts', function (req, res) {
 app.post('/blackbird/subscribe', function (req, res) {
     console.log(req.body);
     const params = req.body;
+    if (!params.email) {
+        console.log("Empty email. EMAIL WON'T BE SENT");
+        return;
+    }
 
     const bbEmail = 'info@blackbird-lab.com';
 
