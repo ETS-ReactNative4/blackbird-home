@@ -224,6 +224,9 @@ p {
 .section.hero {
   padding-top: 108px;
   padding-bottom: 135px;
+  background-image: -webkit-linear-gradient(135deg, rgba(17, 201, 247, .59), rgba(69, 110, 196, .51) 49%, rgba(113, 32, 153, .45)), url("img/background-top.jpg");
+  background-image: linear-gradient(315deg, rgba(17, 201, 247, .59), rgba(69, 110, 196, .51) 49%, rgba(113, 32, 153, .45)),
+  url("img/background-top.jpg");
   background-position: 0% 0%, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
