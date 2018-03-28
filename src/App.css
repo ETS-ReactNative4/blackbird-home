@@ -224,8 +224,6 @@ p {
 .section.hero {
   padding-top: 108px;
   padding-bottom: 135px;
-  background-image: -webkit-linear-gradient(135deg, rgba(17, 201, 247, .59), rgba(69, 110, 196, .51) 49%, rgba(113, 32, 153, .45)), url("http://uploads.webflow.com/5aa93e1692e1834032266a0d/5aa93e1692e183ebcd266a30_dark-laptop.jpg");
-  background-image: linear-gradient(315deg, rgba(17, 201, 247, .59), rgba(69, 110, 196, .51) 49%, rgba(113, 32, 153, .45)), url("http://uploads.webflow.com/5aa93e1692e1834032266a0d/5aa93e1692e183ebcd266a30_dark-laptop.jpg");
   background-position: 0% 0%, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -270,7 +268,6 @@ p {
 
 .section.about-image {
   height: 330px;
-  background-image: url("http://uploads.webflow.com/5aa93e1692e1834032266a0d/5aa93e1692e1835358266a2f_team.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -631,7 +628,6 @@ p {
 
 .padded-column.picture {
   height: 366px;
-  background-image: url("http://uploads.webflow.com/5aa93e1692e1834032266a0d/5aa93e1692e1835dd8266a35_bag-and-hands-bw.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
