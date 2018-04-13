@@ -1,28 +1,30 @@
 import React, {Component} from 'react';
-import {NavLink} from "react-router-dom";
+import HeaderImg from "../img/header__logo.png";
 
 export class Navbar extends Component {
     render() {
         return (
-            <div data-collapse="medium" data-animation="default" data-duration={400} className="navbar w-nav">
-                {/*<div className="w-container"><a href="/" className="brand-wrapper w-nav-brand">
-                    <div className="logo-text">Blackbird</div>
-                </a>
-                    <nav role="navigation" className="nav-menu w-clearfix w-nav-menu">
-                        <NavLink exact to="/" className="nav-link w-nav-link"
-                              activeClassName="w--current">HOME</NavLink>
-                        <NavLink to="/services" className="nav-link w-nav-link"
-                              activeClassName="w--current">services</NavLink>
-                        <NavLink to="/about" className="nav-link w-nav-link"
-                              activeClassName="w--current">About</NavLink>
-                        <NavLink to="/contacts" className="nav-link w-nav-link"
-                              activeClassName="w--current">Contact</NavLink>
-                    </nav>
-                    <div className="menu-button w-nav-button">
-                        <div className="w-icon-nav-menu"/>
+            <header className="header" id="header">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-3 col-6 d-flex align-items-center">
+                            <div className="header__logo d-flex align-items-center">
+                                <a href="/"><img src={HeaderImg} alt="logo" /></a>
+                            </div>
+                        </div>
+                        <div className="col-lg-9 col-6">
+                            <nav className="header__menu">
+                                <ul className="d-flex align-items-center">
+                                    <li><a href="#about-us">About</a></li>
+                                    <li><a href="#mission">Mission</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#get-in-touch" className="header__inquiry">inquiry now</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                </div>*/}
-            </div>
+                </div>
+            </header>
         );
     }
 }

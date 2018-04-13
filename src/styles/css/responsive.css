@@ -1,0 +1,101 @@
+@media screen and (max-width: 1199.98px) {
+    .header__menu ul li {
+        margin-right: 61px;
+    }
+}
+
+@media screen and (max-width: 990.98px) {
+    .footer__copyright {
+        margin-top: 40px;
+    }
+
+    .mission .col-lg-6:first-child::after {
+        height: 300px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        float: right;
+    }
+
+    .modal {
+        -webkit-transition-duration: 0.45s;
+        transition-duration: 0.45s;
+        background: #000;
+        -webkit-transform: translate(100%, 0%);
+        transform: translate(100%, 0%);
+        height: calc(100vh - 69.6px);
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .second {
+        height: calc(100vh - 69.6px);
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .second__title {
+        font-size: 65px;
+    }
+
+    .services {
+        padding-bottom: 50px;
+    }
+
+    .services__block {
+        width: 100% !important;
+        margin-bottom: 50px !important;
+    }
+
+    .mission .col-lg-6:first-child::after {
+        right: unset;
+        bottom: 0;
+        margin: 0 auto;
+        height: 2px;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .second__title {
+        font-size: 50px;
+        word-wrap: break-word;
+    }
+
+    .footer__logo {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (max-width: 454.98px) {
+    .footer .col-6 {
+        -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
+
+/*# sourceMappingURL=responsive.css.map */

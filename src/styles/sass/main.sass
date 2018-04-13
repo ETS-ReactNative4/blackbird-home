@@ -1,0 +1,220 @@
+@font-face
+ font-family: 'GothamBook'
+ src: url(../../../Blackbird-design/fonts/GothamBook.ttf)
+@font-face
+ font-family: 'AvenirBook'
+ src: url(../../../Blackbird-design/fonts/AvenirBook.ttf)
+@font-face
+ font-family: 'GothaProBol'
+ src: url(../../../Blackbird-design/fonts/GothaProBol.otf)
+@font-face
+ font-family: 'AvenirRoman'
+ src: url(../../../Blackbird-design/fonts/AvenirRoman.ttf)
+@font-face
+ font-family: 'MyriadPro-Regular'
+ src: url(../../../Blackbird-design/fonts/MyriadPro-Regular.otf)
+.toggle
+ transform: translate(0%, 0%) !important
+.lock
+ overflow: hidden
+.modal
+ ul
+  height: 50%
+  padding-left: 0
+  li
+   a
+    color: #fff
+    text-decoration: none
+.menu-toggle
+ display: none
+body
+ font-family: 'Avenir Book', sans-serif
+ font-size: 24px
+ color: #000
+.text-center
+ text-align: center
+h1, h2, h3, h4, h5, h6
+ font-weight: 400
+ margin: 0
+h1
+ font-size: 60px
+ margin: 100px 0
+h2
+ font-size: 36px
+h3
+ font-size: 24px
+ font-family: 'Myriad Pro', sans-serif
+ul, li
+ list-style: none
+ display: block
+.header
+ background: #000
+ padding: 5px 0
+ a
+  text-decoration: none
+ &__menu
+  ul
+   li
+    margin-right: 106px
+    &:last-child
+     margin-right: 0
+    a
+     color: #fff
+     font-family: 'GothamBook', sans-serif
+     font-size: 18px
+ &__inquiry
+  background: #fff
+  border-radius: 25px
+  text-transform: uppercase
+  color: #000 !important
+  padding-left: 60px
+  font-size: 21px
+  line-height: 21px
+  padding-right: 60px
+  padding-top: 10px
+  padding-bottom: 10px
+  text-align: center
+.second
+ width: 100%
+ height: calc(100vh - 85.2px)
+ background: url(../../../Blackbird-design/img/second__bg.png) no-repeat
+ -webkit-background-size: cover
+ background-size: cover
+ &__title
+  color: #fff
+  margin: 0
+  font-size: 80px
+  text-transform: uppercase
+  font-family: 'GothaProBol', sans-serif
+.about-us
+ background: #f1f4f9
+ padding-bottom: 40px
+ p
+  max-width: 867px
+  text-align: center
+  line-height: 36px
+  margin-top: 0
+  margin-bottom: 55px
+.mission
+ padding-top: 105px
+ padding-bottom: 100px
+ min-height: 430px
+ text-align: center
+ background: url(../../../Blackbird-design/img/mission-bg.png) no-repeat center center/cover
+ h2
+  margin-bottom: 90px
+ p
+  max-width: 445px
+  line-height: 36px
+  margin-top: 0
+  margin-bottom: 0
+ .col-lg-6:first-child::after
+  content: ''
+  display: block
+  width: 2px
+  background: #464646
+  height: 230px
+  margin-top: 10px
+  position: absolute
+  right: 0
+.services
+ background: #f1f4f9
+ padding-bottom: 100px
+ h1
+  text-align: center
+ &__block
+  padding: 30px
+  box-shadow: 0px 0px 7.84px 0.16px rgba(65, 64, 63, 0.14)
+  text-align: center
+  background: #fff
+  p
+   font-size: 14px
+   color: #525254
+   margin-bottom: 0
+   max-width: 310px
+   font-family: 'GothamBook', sans-serif
+  h3
+   font-family: 'MyriadPro-Regular', sans-serif
+   &::after
+    content: ''
+    display: block
+    height: 3px
+    width: 85px
+    background: #6bc0f6
+    margin: 0 auto
+    margin-top: 25px
+ .col-lg-4 .services__block
+  width: 325px
+  max-width: 100%
+  margin-bottom: 50px
+ .col-lg-6 .services__block
+  width: 515px
+  max-width: 100%
+.get-in-touch
+ padding-bottom: 100px
+ h1
+  margin-bottom: 0
+ &__subtitle
+  margin: 45px 0
+  color: #525254
+  font-size: 24px
+  display: block
+ input:not([type="submit"])
+  background: #f1f4f9
+  padding-left: 40px
+  font-size: 24px
+  border: none
+  outline: none
+  padding-top: 20px
+  padding-bottom: 20px
+  margin-bottom: 20px
+  width: 100%
+  &::placeholder
+   color: #525254
+ input[type="submit"]
+  background: #6bc0f6
+  text-transform: uppercase
+  color: #fff
+  border: none
+  outline: none
+  margin: 0 auto
+  display: block
+  margin-top: 25px
+  padding: 10px 50px
+  border-radius: 30px
+  cursor: pointer
+.footer
+ background: #111111
+ padding-top: 34px
+ padding-bottom: 30px
+ font-family: 'AvenirBook', sans-serif
+ font-size: 16px
+ ul
+  margin-bottom: 0
+  margin-top: 0
+  padding: 0
+ &__social
+  a:first-child
+   margin-right: 20px
+  a:last-child
+   margin-left: 20px
+  img
+   max-width: 40px
+ &__title
+  opacity: 1 !important
+ p
+  opacity: 0.5
+  color: #fff
+ &__menu
+  li
+   margin-bottom: 20px
+   &:first-child
+    margin-top: 16px
+   a
+    color: #fff
+    text-decoration: none
+ &__copyright
+  opacity: 1 !important
+
+
+@import "responsive"

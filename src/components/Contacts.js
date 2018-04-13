@@ -10,7 +10,8 @@ class Contacts extends Component {
                 firstName: data.get('first-name'),
                 lastName: data.get('last-name'),
                 email: data.get('email'),
-                description: data.get('description')
+                description: data.get('description'),
+                country: data.get('country')
             }
         };
         if (!contactRequest.body.email) {
@@ -18,39 +19,36 @@ class Contacts extends Component {
         }
 
         API.post('BlackbirdHome', '/blackbird/contacts', contactRequest).then(response => {
+            this.contactsForm.reset();
         });
 
-        this.contactsForm.reset();
+
     }
 
     render() {
         return (
-            <div className="section contact-us">
-                <div className="w-container"><h1>Getting in touch is easy</h1>
-                    <div className="get-in-touch-subtitle">We'll get back to you ASAP. No worries.</div>
-                    <div className="w-form">
-                        <form name="email-form" data-name="Email Form" className="w-clearfix"
-                              onSubmit={this.submit.bind(this)} ref={(el) => this.contactsForm = el}>
-                            <input type="text" name="first-name" data-name="First Name" placeholder="First Name"
-                                   maxLength={256} required className="field left w-input"/>
-                            <input type="text" name="last-name" data-name="Last Name" placeholder="Last Name"
-                                   maxLength={256} required className="field right w-input"/>
-                            <input type="email" name="email" data-name="Email" placeholder="Email Address"
-                                   maxLength={256} required className="field w-input"/>
-                            <textarea placeholder="What do you need help with?" maxLength={5000} name="description"
-                                      data-name="Description" required className="field w-input"
-                                      defaultValue={""}/>
-                            <input type="submit" defaultValue="Send email" data-wait="Please wait..."
-                                   className="button contact w-button"/>
-                        </form>
-                        <div className="success-message big w-form-done"><h2>Thank you for contacting us!</h2>
-                            <p>Your
-                                submission has been received and we will reply shortly.&nbsp;</p></div>
-                        <div className="w-form-fail"><p>Oops! Something went wrong while submitting the form :(</p>
+            <section className="get-in-touch" id="get-in-touch">
+                <div className="container">
+                    <form className="row" onSubmit={this.submit.bind(this)} ref={(el) => this.contactsForm = el}>
+                        <div className="col-lg-12 d-flex flex-column align-items-center">
+                            <h1 className="text-center">Getting in touch is easy</h1>
+                            <span className="get-in-touch__subtitle text-center">
+                                    We’ll get back to you ASAP. No worries.
+                                </span>
                         </div>
-                    </div>
+                        <div className="col-lg-6"><input type="text" name="first-name" placeholder="First Name"
+                                                         required/></div>
+                        <div className="col-lg-6"><input type="text" name="last-name" placeholder="Last Name" required/>
+                        </div>
+                        <div className="col-lg-6"><input type="email" name="email" placeholder="Email" required/></div>
+                        <div className="col-lg-6"><input type="text" name="country" placeholder="Country"/></div>
+                        <div className="col-lg-12">
+                            <textarea maxLength={5000} name="description" placeholder="Your message here" required/>
+                            <input type="submit" defaultValue="Send email"/>
+                        </div>
+                    </form>
                 </div>
-            </div>
+            </section>
         );
     }
 }
