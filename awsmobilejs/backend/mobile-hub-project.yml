@@ -11,7 +11,7 @@ features:
           sdk-generation-stage-name: Development
         paths:
           /blackbird/contacts: !com.amazonaws.mobilehub.v0.Function 
-            codeFilename: uploads/BlackbirdContacts-20180413144557.zip
+            codeFilename: uploads/BlackbirdContacts-20180516183747.zip
             description: 'Handler for calls to resource path : /blackbird/contacts/{proxy+}'
             enableCORS: true
             environment: {}
@@ -24,7 +24,7 @@ features:
             timeout: '3'
             version: 7OpNZVDR2LruSjU1.5sR24tK9XyaPAh6
           '/blackbird/contacts/{proxy+}': !com.amazonaws.mobilehub.v0.Function 
-            codeFilename: uploads/BlackbirdContacts-20180413144557.zip
+            codeFilename: uploads/BlackbirdContacts-20180516183747.zip
             description: 'Handler for calls to resource path : /blackbird/contacts/{proxy+}'
             enableCORS: true
             environment: {}

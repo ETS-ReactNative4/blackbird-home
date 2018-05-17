@@ -14,7 +14,7 @@ class Footer extends Component {
                             <div className="footer__logo">
                                 <a href="/"><img src={FooterLogo} alt="blackbird"/></a>
                                 <p className="footer__copyright text-center">
-                                    © <img height={10} src={FooterLogo} alt="<Blackbird>"/> 2017-2018. All rights reserved
+                                    © Blackbird Lab. 2017-2018. All rights reserved
                                 </p>
                             </div>
                         </div>
