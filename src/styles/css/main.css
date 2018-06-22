@@ -329,6 +329,10 @@ ul, li {
     color: #fff;
 }
 
+.footer a, .footer a:link, .footer a:hover, .footer a:visited, .footer a:active {
+    color: inherit;
+    text-decoration: inherit;
+}
 .footer__menu li {
     margin-bottom: 20px;
 }

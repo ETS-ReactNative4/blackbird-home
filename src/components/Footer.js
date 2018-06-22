@@ -10,7 +10,7 @@ class Footer extends Component {
             <footer className="footer" id="footer">
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 col-6 d-flex align-items-center">
+                        <div className="col-lg-4 col-6 d-flex align-items-center pt-3">
                             <div className="footer__logo">
                                 <a href="/"><img src={FooterLogo} alt="blackbird"/></a>
                                 <p className="footer__copyright text-center">
@@ -18,17 +18,7 @@ class Footer extends Component {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-lg-5 col-6 d-flex justify-content-end">
-                            <div className="footer__contacts">
-                                <p className="footer__title">E-mail</p>
-                                <p>info@blackbird-lab.com</p>
-                                <p className="footer__title">Address</p>
-                                <p>Solomianska St, 33
-                                    <br/>
-                                    Kyiv, Ukraine, 03141</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-3">
+                        <div className="col-lg-2 pt-3">
                             <div className="footer__menu">
                                 <ul className="d-flex flex-column">
                                     <li><a href="#about-us">About</a></li>
@@ -45,6 +35,24 @@ class Footer extends Component {
                                        rel="noopener noreferrer"><img src={DouLogo} alt="dou"/></a>
                                 </ul>
                             </div>
+                        </div>
+                        <div className="col-lg-3 col-6 d-flex pt-3">
+                            <div className="footer__contacts">
+                                <p className="footer__title">E-mail</p>
+                                <p>info@blackbird-lab.com</p>
+                                <p className="footer__title">Address</p>
+                                <p>
+                                    <a href="https://goo.gl/maps/ocUvbkWyqWM2" target="_blank" rel="noopener noreferrer">
+                                        Bekhterevs'kyi Ln, 4Б
+                                        <br/>
+                                        Kyiv, Ukraine, 04053
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 pt-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1453938103737!2d30.494461915731634!3d50.457017179476274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce64240200f3%3A0xa84a1b44187db148!2sBekhterevs'kyi+Ln%2C+4%D0%91%2C+Kyiv%2C+02000!5e0!3m2!1sen!2sua!4v1529684386873"
+                                width={200} height={200} frameBorder={0} style={{border: 0}} allowFullScreen />
                         </div>
                     </div>
                 </div>
