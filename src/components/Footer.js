@@ -42,16 +42,16 @@ class Footer extends Component {
                                 <p>info@blackbird-lab.com</p>
                                 <p className="footer__title">Address</p>
                                 <p>
-                                    <a href="https://goo.gl/maps/ocUvbkWyqWM2" target="_blank" rel="noopener noreferrer">
-                                        Bekhterevs'kyi Ln, 4Б
+                                    <a href="https://goo.gl/maps/QR1Jh5WvRr92" target="_blank" rel="noopener noreferrer">
+                                        Shota Rustaveli St, 16
                                         <br/>
-                                        Kyiv, Ukraine, 04053
+                                        Kyiv, Ukraine, 01001
                                     </a>
                                 </p>
                             </div>
                         </div>
                         <div className="col-lg-3 pt-3">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1453938103737!2d30.494461915731634!3d50.457017179476274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce64240200f3%3A0xa84a1b44187db148!2sBekhterevs'kyi+Ln%2C+4%D0%91%2C+Kyiv%2C+02000!5e0!3m2!1sen!2sua!4v1529684386873"
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.278732881232!2d30.518900829259266!3d50.4389598528666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefef4cf4547%3A0xfd47efd663b1dbb2!2sShota+Rustaveli+St%2C+16%2C+Kyiv%2C+02000!5e0!3m2!1sen!2sua!4v1549454552129"
                                 width={200} height={200} frameBorder={0} style={{border: 0}} allowFullScreen />
                         </div>
                     </div>

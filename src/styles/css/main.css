@@ -329,7 +329,7 @@ ul, li {
     color: #fff;
 }
 
-.footer a, .footer a:link, .footer a:hover, .footer a:visited, .footer a:active {
+.footer__contacts a, .footer__contacts a:link, .footer__contacts a:hover, .footer__contacts a:visited, .footer__contacts a:active {
     color: inherit;
     text-decoration: inherit;
 }
